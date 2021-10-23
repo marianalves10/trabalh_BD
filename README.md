@@ -7,7 +7,7 @@ Estrutura de pastas:
 ├── etapa2 # trabalhos da etapa 2
 │	├── PropostaInicial.pdf # documento descrevendo a proposta inicial
 │	└── PropostaSlide.pptx # slide descrevendo a proposta inicial
-└── etapa4 # trabalho da etapa 4
+└── etapa04 # trabalho da etapa 4
 	└── README.md # um readme contendo o trabalho da etapa 4
 
 ~~~
