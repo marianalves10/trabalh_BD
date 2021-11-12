@@ -1,6 +1,4 @@
-# Modelo para Apresentação da Entrega Prévia do Projeto
-
-# `Projeto de Banco de Dados - EquipeDupla ED: Covid-19`
+# Projeto de Banco de Dados - EquipeDupla ED: Covid-19
 
 # Equipe `EquipeDupla` - `ED`
 * `Lucas Fernandes André` - `182495`
@@ -14,8 +12,6 @@
 > Coloque aqui o link para o PDF da apresentação prévia
 
 ## Modelo Conceitual Preliminar
-
-> Coloque aqui a imagem do modelo conceitual preliminar em ER ou UML, como o exemplo a seguir:
 > ![Modelo](images/modelo_conceitual.png)
 
 ## Modelos Lógicos Preliminares
