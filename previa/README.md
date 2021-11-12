@@ -15,7 +15,7 @@
 
 ## Modelos Lógicos Preliminares
 
-> ![Modelo](images/modelo_logico)
+> ![Modelo](images/modelo_logico.png)
 
 ## Dataset Preliminar a ser Publicado
 
