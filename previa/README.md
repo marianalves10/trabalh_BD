@@ -15,14 +15,7 @@
 
 ## Modelos Lógicos Preliminares
 
-> Coloque aqui os primeiros modelos lógicos dos bancos de dados relacionados aos modelos conceituais. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos o formato é livre, pode ser adotado aqueles apresentados em sala.
-
-> Exemplo de modelo lógico relacional
-~~~
-PESSOA(_Código_, Nome, Telefone)
-ARMÁRIO(_Código_, Tamanho, Ocupante)
-  Ocupante chave estrangeira -> PESSOA(Código)
-~~~
+> ![Modelo](images/modelo_logico)
 
 ## Dataset Preliminar a ser Publicado
 
