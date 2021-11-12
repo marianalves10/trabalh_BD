@@ -7,7 +7,6 @@
 ## Resumo do Projeto
 > O projeto atualmente visa relacionar dados sobre o covid de cada estado para ter uma comparação entre eles e fazer uma análise sobre como a pandemia afetou o emprego das pessoas no Brasil.
 
-
 ## Slides da Apresentação
 > Coloque aqui o link para o PDF da apresentação prévia
 
@@ -26,55 +25,25 @@ ARMÁRIO(_Código_, Tamanho, Ocupante)
 ~~~
 
 ## Dataset Preliminar a ser Publicado
-> Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
 
-título do arquivo/base | link | breve descrição
------ | ----- | -----
-`<título do arquivo/base>` | `<link para arquivo/base>` | `<breve descrição do arquivo/base>`
+Dados de ocupação na pandemia | [arquivo](data/processed/data_economico.csv) | É possível através desse dataset observar a relação entre o número de ocupação das pessoas nos meses da pandemia.
+
+Dados de casos de casos de covid | [arquivo](data/processed/analisecasos.csv) | É possível através desse dataset observar a relação entre o número de casos entre as regiões do país nos meses da pandemia.
+
+Dados de casos de óbitos de covid | [arquivo](data/processed/analiseobito.csv) | É possível através desse dataset observar a relação entre o número de óbitos entre as regiões do país nos meses da pandemia.
 
 
 ## Bases de Dados
-> Elencar as bases de dados fonte utilizadas no projeto.
-
-título da base | link | breve descrição
------ | ----- | -----
-`<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
+Coronavírus Brasil | [covid.saude](https://covid.saude.gov.br/)| Síntese de casos, óbitos, incidência e mortalidade por covid.
+IpeaData | [ipeadata](http://www.ipeadata.gov.br/) | Dados econômicos e financeiros do Brasil em séries anuais, mensais e diárias na mesma unidade monetária.
 
 ## Operações realizadas para a construção do dataset
-
-> Coloque um link para o arquivo do notebook, programas ou workflows que executam as operações de construção do dataset:
-* extração de dados de fontes não estruturadas como, por exemplo, páginas Web
-* agregação de dados fragmentados obtidos a partir de API
-* integração de dados de múltiplas fontes
-* tratamento de dados
-* transformação de dados para facilitar análise e pesquisa
-
-> Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+* [operações realizadas sobre dados de covid](notebooks/pre_processamento_covid.ipynb)
+* [operações realizadas sobre dados de economia](notebooks/pre_processamento_economicos.ipynb)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
+* [Pergunta respondida](notebooks/perguntas.ipynb)
 
-> Liste aqui as perguntas de pesquisa/análise e respectivas análises.
-> Nem todas as perguntas precisam de queries que as implementam.
-> É possível haver perguntas em que a solução é apenas descrita para
-> demonstrar o potencial da base.
->
-### Pergunta/Análise 1
-> * Pergunta 1
->   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
->     responde à pergunta.
-
-### Pergunta/Análise 2
-> * Pergunta 2
->   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
->     responde à pergunta.
-
-### Pergunta/Análise 3
-> * Pergunta 3
->   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
->     responde à pergunta.
-
-> Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
-
+### Pergunta 1
+* O mês de 2020 que teve maior número de óbitos foi o mesmo mês que teve menor número de pessoas ocupadas?
+** Será feito uma análise sobre a tabela de pessoas ocupadas e número de óbitos, comparando os meses do ano de 2020.
