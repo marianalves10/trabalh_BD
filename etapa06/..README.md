@@ -1,0 +1,1 @@
+# Fazer as queries em python :^) a partir dos sites
