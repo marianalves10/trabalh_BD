@@ -8,7 +8,7 @@
 > O projeto atualmente visa relacionar dados sobre o covid de cada estado para ter uma comparação entre eles e fazer uma análise sobre como a pandemia afetou o emprego das pessoas no Brasil.
 
 ## Slides da Apresentação
-> Coloque aqui o link para o PDF da apresentação prévia
+> ![Slide](slides/Slide_etapa6.pdf)
 
 ## Modelo Conceitual Preliminar
 > ![Modelo](images/modelo_conceitual.png)
