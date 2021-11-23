@@ -15,3 +15,6 @@ Estrutura de pastas:
 # Alunos
 * 182495: Lucas Fernandes André 
 * 241201: Mariana Alves de Sousa
+
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marianalves10/trabalh_BD/HEAD)
