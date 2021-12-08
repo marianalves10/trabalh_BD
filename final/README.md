@@ -13,13 +13,17 @@
 ## Modelo Conceitual Preliminar
 > ![Modelo](images/modelo_conceitual.png)
 
-## Modelos Lógicos Preliminares
+## Modelos Lógicos
 
-> ![Modelo](images/modelo_logico.png)
+> estados (sigla, nome)
+> fronteiras (sigla_1, sigla_2)
+> dados (estado, data, semanaEpi, populacaoTCU2019, casosAcumulados, casosNovos, obitosAcumulados, obitosNovos)
+> pessoas_habilitadas (data, contagem_pessoas)
+> pessoas_ocupadas (data, contagem_pessoas)
 
 ## Dataset Preliminar a ser Publicado
 
-Dados de ocupação e de covid | [arquivo](data/processed/test_database_) | É possível através desse dataset observar a relação entre o número de pessoas ocupadas e dados de óbitos nos meses da pandemia.
+Dados de ocupação e de covid | [arquivo](data/processed/database_) | É possível através desse dataset observar a relação entre o número de pessoas ocupadas e dados de óbitos nos meses da pandemia.
 
 
 ## Bases de Dados
@@ -27,8 +31,7 @@ Coronavírus Brasil | [covid.saude](https://covid.saude.gov.br/)| Síntese de ca
 IpeaData | [ipeadata](http://www.ipeadata.gov.br/) | Dados econômicos e financeiros do Brasil em séries anuais, mensais e diárias na mesma unidade monetária.
 
 ## Operações realizadas para a construção do dataset
-* [operações realizadas sobre dados de covid](notebooks/pre_processamento_covid.ipynb)
-* [operações realizadas sobre dados de economia](notebooks/pre_processamento_economicos.ipynb)
+* [operações realizadas sobre dados](notebooks/pre_processamento.ipynb)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 * [Pergunta respondida](notebooks/perguntas.ipynb)
