@@ -16,14 +16,18 @@
 ## Modelos Lógicos
 
 > estados (sigla, nome)
+> 
 > fronteiras (sigla_1, sigla_2)
+> 
 > dados (estado, data, semanaEpi, populacaoTCU2019, casosAcumulados, casosNovos, obitosAcumulados, obitosNovos)
+> 
 > pessoas_habilitadas (data, contagem_pessoas)
+> 
 > pessoas_ocupadas (data, contagem_pessoas)
 
 ## Dataset Preliminar a ser Publicado
 
-Dados de ocupação e de covid | [arquivo](data/processed/database_) | É possível através desse dataset observar a relação entre o número de pessoas ocupadas e dados de óbitos nos meses da pandemia.
+É possível através do dataset observar a relação entre o número de pessoas ocupadas e dados de óbitos nos meses da pandemia.
 
 
 ## Bases de Dados
@@ -31,10 +35,10 @@ Coronavírus Brasil | [covid.saude](https://covid.saude.gov.br/)| Síntese de ca
 IpeaData | [ipeadata](http://www.ipeadata.gov.br/) | Dados econômicos e financeiros do Brasil em séries anuais, mensais e diárias na mesma unidade monetária.
 
 ## Operações realizadas para a construção do dataset
-* [operações realizadas sobre dados](notebooks/pre_processamento.ipynb)
+* [operações realizadas sobre dados](notebooks/pre_processamento_final.ipynb)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
-* [Pergunta respondida](notebooks/perguntas.ipynb)
+* [Pergunta respondida](notebooks/perguntas_final.ipynb)
 
 ### Pergunta 1
 * O mês de 2020 que teve maior número de óbitos foi o mesmo mês que teve menor número de pessoas ocupadas?
