@@ -33,13 +33,32 @@
 ## Bases de Dados
 Coronavírus Brasil | [covid.saude](https://covid.saude.gov.br/)| Síntese de casos, óbitos, incidência e mortalidade por covid.
 IpeaData | [ipeadata](http://www.ipeadata.gov.br/) | Dados econômicos e financeiros do Brasil em séries anuais, mensais e diárias na mesma unidade monetária.
+Estados e siglas | [estados](https://raw.githubusercontent.com/leogermani/estados-e-municipios-ibge/master/estados.csv) | Tabela que apresenta o nome dos estados e suas respectivas siglas.
 
-## Operações realizadas para a construção do dataset
-* [operações realizadas sobre dados](notebooks/pre_processamento_final.ipynb)
+## Detalhamento do Projeto
+O projeto pode ser dividido entre aquisição dos dados, adequação dos dados e as análises efetuadas
+
+### Aquisição de dados
+Graças à livre disponibilidade de dados por parte do governo, os dados IpeaData e Coronavírus Brasil puderam ser baixados diretamente dos sites oficiais, não necessitando da implementação de uma ferramenta mais robusta.
+
+### Adequação de dados
+A adequação de dados pode ser vizualizada no arquivo [pre_processamento_final.ipynb](https://github.com/marianalves10/trabalh_BD/blob/master/final/notebooks/pre_processamento_final.ipynb), onde as fontes de dados são limpadas para se adequarem melhor à nossa necessidade. É realzido um filtro tanto de colunas que não iriamos usar quanto de agregar os dias para separar os dados no espaçamento temporal que queríamos
+
+### Análises efetuadas
+A análise se encontra no notebook [perguntas final](https://github.com/marianalves10/trabalh_BD/blob/master/final/notebooks/perguntas_final.ipynb), nele utilizamos os dados que tínhamos para a partir de nossas hipóteses chegarmos a alguma conclusão se tais indagações  eram verdadeiras ou não
+
+## Evolução do projeto
+O projeto iniciou-se com um brainstorm de ideias sobre a qual trabalhar, chegando à conclusão de que o tema que seria de mais fácil acesso à informação confiável era também o temo mais relevante, que foi o tema escolhido, Covid-19 no Brasil. Nosso maior problema sempre foi entrar em sintonia na hora de realizar o trabalho, por diversas vezes tivemos desencontros sobre como prosseguir, posteriormente resolvendo tais desentendimentos após argumentação. Outros problemas a serem considerados: O membro Lucas André não conseguiu realizar as queries em SQL por algum motivo desconhecido, de todas as maneiras que ele tentava instalar pacotes diferentes, nenhum dava certo. A Mariana teve muita dificuldade dada uma emergência médica, que acabou por gerar muito atraso no trabalho e posteriormente extendendo a sua data de entrega.
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 * [Pergunta respondida](notebooks/perguntas_final.ipynb)
 
 ### Pergunta 1
 * O mês de 2020 que teve maior número de óbitos foi o mesmo mês que teve menor número de pessoas ocupadas?
-** Será feito uma análise sobre a tabela de pessoas ocupadas e número de óbitos, comparando os meses do ano de 2020.
+** ![pergunta1](images/opera_v1a5j6Q8fV.png)
+** Isto mostra que o mês que teve maior número de óbitos não foi o mês com o menor número de pessoas ocupadas. Nossa hipótese inicial se encontrava errada, uma possível justificativa é que o impacto das mortes tem um efeito retardado na economia, ou seja, seu impacto será sentido apenas posteriormente. Outra possível justificativa é que quando havia um maior número de pessoas ocupadas, havia mais transmissão e consequentemente mais mortes, o que poderia ser testado em uma análise posterior
+
+### Pergunta 2
+* Estados que fazem fronteiras um com o outro possuem índices de mortalidade similares?
+** ![pergunta2](images/opera_qqzT79YxXO.png)
+** Isso nos mostra que o índice de mortalidade não é parecido com estados próximos, isto evidencia que as políticas tomadas por cada governo tem alto impacto nos índices de mortalidade, uma vez que não uma mudança muito grande em termos de comportamentos de população entre estados vizinhos, salvo para estados que possuem cidades muito populosas. Em uma análise posterior, poderia-se comparar munincípios vizinhos
